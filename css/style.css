@@ -3,3 +3,70 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* GENERAL */
+
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+header{
+  height: 70px;
+  width: 100%;
+  background-color: black;
+  text-align: end;
+}
+
+.btn-header{
+  color: white;
+  background-color: grey;
+  padding: 4px 2px;
+  border-radius: 6px;
+  border: 1px solid grey;
+  margin-top: 5px;
+  margin-right: 2px;
+}
+
+main{
+  height: calc(100vh - 140px);
+  background-color: black;
+  overflow: auto;
+}
+
+
+footer{
+  height: 70px;
+  background-color: grey;
+}
+
+
+/* MAIN */
+
+.card{
+  position: relative;
+  max-width: 150px;
+  margin: 5px 3px;
+}
+
+.card span{
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  color: white;
+  background-color: rgba(190, 30, 30, 0.3);
+}
+
+.card img{
+  width: 100%;
+  
+}
