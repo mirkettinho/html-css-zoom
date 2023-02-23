@@ -6,7 +6,6 @@
 
 /* GENERAL */
 
-
 .container{
   width: 90%;
   margin: 0 auto;
@@ -28,11 +27,26 @@
   position: relative;
 }
 
+.mx-10{
+  margin: 0px 10px;
+}
+.mx-20{
+  margin: 0px 20px;
+}
+.mx-30{
+  margin: 0px 30px;
+}
+.mx-40{
+  margin: 0px 40px;
+}
+.mx-50{
+  margin: 0px 50px;
+}
 /* HEADER */
 header{
   height: 70px;
   width: 100%;
-  background-color: black;
+  background-color: #474747;
   text-align: end;
 }
 
@@ -53,14 +67,14 @@ header{
 /* MAIN */
 main{
   height: calc(100vh - 140px);
-  background-color: black;
+  background-color: #474747;
   overflow: auto;
 }
 
 .card{
   position: relative;
-  width: 150px;
-  height: 80px;
+  width: 250px;
+  height: 134px;
   margin: 5px 3px;
   overflow: hidden;
   cursor: pointer;
@@ -68,10 +82,13 @@ main{
 
 .card span{
   position: absolute;
-  bottom: 4px;
+  font-size: 10px;
+  bottom: 0;
   left: 0;
-  color: white;
-  background-color: rgba(190, 30, 30, 0.3);
+  color: #eae0db;
+  background-color: #67717a;
+  background-color: rgba(103, 113, 122, 0.3);
+  padding: 3px;
 }
 
 .card img{
@@ -85,25 +102,38 @@ main{
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(190, 30, 30, 0.3);
+  background-color: rgba(103, 113, 122, 0.3);
   overflow: hidden;
   width: 100%;
   height: 0;
   transition: .5s ease;
 }
 
+
+.card:active{
+  width: 400px; 
+  z-index: 800;
+}
 .card:hover .overlay {
   height: 100%;
 }
-
+.card:hover{
+    transform: scale(1.5);
+    z-index: 2;
+    margin-top: 36px;
+}
 .kick-out{
-  text-align: center;
-  line-height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  
   
 }
 
 .out{
-  background-color: #b72525;#de2828
+  background-color: #403f40;
   color: white;
   padding: 10px;
   border-radius: 10px;
@@ -114,46 +144,82 @@ main{
 }
 
 .out:hover{
-  background-color: #de2828;
-}
-/* FOOTER */
-footer{
-  height: 70px;
-  background-color: #212121;
+  background-color: #a41a20;
 }
 
-.block{
-  display: block;
+
+/* FOOTER */
+footer{
+  background-color: #212121;
+  height: 70px;
+}
+footer .button{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  justify-content: space-between;
+}
+
+.col{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+ul,
+li{
+    display: inline-block
+}
+
+ul li{
+    opacity: 100%;
+    color: white;
+}
+
+.menu::after{
+  content: "\2303";
+  color: #ffffff;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.btn-end{
+  padding: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #de2828;
+  height: 100%;
+}
+
+footer p{
+  font-size: 12px;
+  padding: 4px;
 }
 
 footer i{
-  font-size: 30px;
-  color: white;
+  font-size: 22px;
+  padding: 4px;
 }
 
-footer span{
-  font-size: 15px;
-  color: white;
+.item a{
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.btn{
-  padding-top: 10px;
-  padding-left: 10px;
+.active{
+  color: #43ad04;
 }
 
-.name-button span{
-  font-size: 10px;
-  padding-left:px;
-}
-
-.btn-right{
-  height: 100%;
-  background-color: #403f40;
-  padding: 0px 15px;
-  align-items: center;
-}
-
-.btn-right span{
-  color: #a41a20;
-  font-weight: 800;
+.end-meeting{
+  justify-content: center;
 }
