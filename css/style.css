@@ -213,6 +213,7 @@ ul li{
   display: inline-block;
   font-size: 12px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .btn-end{
