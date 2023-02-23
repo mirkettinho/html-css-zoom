@@ -46,7 +46,7 @@
 header{
   height: 70px;
   width: 100%;
-  background-color: #474747;
+  background-color: #6d6d6d;
   text-align: end;
 }
 
@@ -67,7 +67,7 @@ header{
 /* MAIN */
 main{
   height: calc(100vh - 140px);
-  background-color: #474747;
+  background-color: #6d6d6d;
   overflow: auto;
 }
 
@@ -110,10 +110,32 @@ main{
 }
 
 
-.card:active{
-  width: 400px; 
-  z-index: 800;
+.out:active{
+  cursor: wait; 
+  z-index: 10;
+    --size: 10.25em;
+    --offset-r: calc(var(--size) * -1);
+    --offset-l: 0;
+    --opacity: 0;
+    
+    height: 200px;
+    width: 400px;
+    
+    margin-top: calc(var(--size) * -0.5);
+    margin-right: var(--offset-r);
+    margin-bottom: calc(var(--size) * -0.5);
+    margin-left: var(--offset-l);
+    
+    box-sizing: border-box;
+    border: 0.125em solid rgba(white, 0.333);
+    border-top-color: white;
+    
+    border-radius: 50%;
+    opacity: var(--opacity);
+    
+    transition: 0.0s;
 }
+
 .card:hover .overlay {
   height: 100%;
 }
@@ -176,12 +198,12 @@ footer .button{
 
 ul,
 li{
-    display: inline-block
+  display: inline-block
 }
 
 ul li{
-    opacity: 100%;
-    color: white;
+  opacity: 100%;
+  color: white;
 }
 
 .menu::after{
@@ -195,12 +217,21 @@ ul li{
 
 .btn-end{
   padding: 8px;
-  color: #ffffff;
+  color: #dd2136;
   text-decoration: none;
-  background-color: #de2828;
+  background-color: #4a4a4a;
   height: 100%;
 }
 
+.btn-end:hover{
+  color: #4a4a4a;
+  background-color: #dd2136; 
+}
+
+.btn-end:active{
+  cursor: wait;
+  
+}
 footer p{
   font-size: 12px;
   padding: 4px;
@@ -216,10 +247,24 @@ footer i{
   text-decoration: none;
 }
 
+.item.mute:hover a{
+  color: #de2828;
+}
+.item:hover a{
+  color: #43ad04;
+}
+
 .active{
   color: #43ad04;
 }
 
 .end-meeting{
-  justify-content: center;
+  align-self: center;
 }
+
+.mute:active,
+.mute:active{
+  text-decoration: line-through;
+  color: #de2828;
+}
+
