@@ -20,6 +20,15 @@
   flex-wrap: wrap;
 }
 
+.justify-content{
+  justify-content: space-between;
+}
+
+.relative{
+  position: relative;
+}
+
+/* HEADER */
 header{
   height: 70px;
   width: 100%;
@@ -30,32 +39,31 @@ header{
 .btn-header{
   color: white;
   background-color: grey;
-  padding: 4px 2px;
+  padding: 4px 3px;
   border-radius: 6px;
   border: 1px solid grey;
   margin-top: 5px;
   margin-right: 2px;
 }
 
+
+
+
+
+/* MAIN */
 main{
   height: calc(100vh - 140px);
   background-color: black;
   overflow: auto;
 }
 
-
-footer{
-  height: 70px;
-  background-color: grey;
-}
-
-
-/* MAIN */
-
 .card{
   position: relative;
-  max-width: 150px;
+  width: 150px;
+  height: 80px;
   margin: 5px 3px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .card span{
@@ -68,5 +76,84 @@ footer{
 
 .card img{
   width: 100%;
+
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(190, 30, 30, 0.3);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.card:hover .overlay {
+  height: 100%;
+}
+
+.kick-out{
+  text-align: center;
+  line-height: 80px;
   
+}
+
+.out{
+  background-color: #b72525;#de2828
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: #de2828;
+  cursor: pointer;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.out:hover{
+  background-color: #de2828;
+}
+/* FOOTER */
+footer{
+  height: 70px;
+  background-color: #212121;
+}
+
+.block{
+  display: block;
+}
+
+footer i{
+  font-size: 30px;
+  color: white;
+}
+
+footer span{
+  font-size: 15px;
+  color: white;
+}
+
+.btn{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.name-button span{
+  font-size: 10px;
+  padding-left:px;
+}
+
+.btn-right{
+  height: 100%;
+  background-color: #403f40;
+  padding: 0px 15px;
+  align-items: center;
+}
+
+.btn-right span{
+  color: #a41a20;
+  font-weight: 800;
 }

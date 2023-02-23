@@ -12,8 +12,8 @@
 
   <!-- HEADER -->
   <header>
-    <button class="btn-header">Speaker view</button>
-    <button class="btn-header">X</button>
+    <button class="btn-header"><i class="fa-solid fa-table-cells"></i> Speaker View</button>
+    <button class="btn-header"><i class="fa-solid fa-maximize"></i></button>
 
   </header>
 
@@ -21,9 +21,13 @@
   <main>
     <div class="container flex wrap">
 
-      <div class="card">
+      <div class="card relative">
         <img src="https://api.lorem.space/image/face?w=150&h=150" alt="">
         <span><i class="fa-solid fa-microphone-slash"></i>Paolo Bonolis</span>
+        <div class="overlay">
+          <div class="kick-out">
+            <button class="out">kick out</button></div>
+        </div>
       </div>
 
       <div class="card">
@@ -227,23 +231,63 @@
       </div>
 
 
-
-
-
     </div>
-  
-
-
-
-
-
-
-
-
   </main>
 
   <!-- FOOTER -->
-  <footer>
+  <footer class="flex justify-content">
+
+    <div class="btn left">
+      <span>
+        <i class="fa-solid fa-microphone-slash"></i>
+        <i class="fa-solid fa-angle-up"></i>
+      </span>
+      <span>
+        <i class="fa-solid fa-video"></i>
+        <i class="fa-solid fa-angle-up"></i>
+      </span>
+      <div class="text">
+        <span>Mute</span>
+        <span>Stop Video</span>
+      </div>
+    </div>
+
+    <div class="btn center">
+      <span>
+        <i class="fa-solid fa-user-plus"></i>
+        <i class="fa-solid fa-user-group"></i>
+      </span>
+      <span>
+        <i class="fa-solid fa-chart-column"></i>
+        <i class="fa-solid fa-share-from-square"></i>
+      </span>
+      <span>
+        <i class="fa-solid fa-angle-up"></i>
+        <i class="fa-solid fa-comment"></i>
+      </span>
+      <span>
+        <i class="fa-solid fa-record-vinyl"></i>
+        <i class="fa-solid fa-table-cells-large"></i>
+      </span>
+      <span>
+        <i class="fa-solid fa-ellipsis"></i>
+      </span>
+      <div class="text">
+        <span>Invite</span>
+        <span>Manage Participants</span>
+        <span>Polling</span>
+        <span>Share Screen</span>
+        <span>Chat</span>
+        <span>Record</span>
+        <span>Breakout Rooms</span>
+        <span>More</span>
+      </div>
+    </div>
+
+
+    <div class="btn-right flex">
+      <span>End meeting</span>   
+    </div>
 
   </footer>
   
